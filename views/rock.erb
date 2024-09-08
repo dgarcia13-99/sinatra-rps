@@ -6,7 +6,20 @@
 </head>
 
 <body>
-<h1></h1>
+<h2>We played rock!</h2>
+
+<% if @player_pick== "rock" %>
+    <h2>They played rock! </h2>
+    <h2>We tied!</h2>
+<% elsif @player_pick == "scissors" %>
+    <h2>They played scissors! </h2>
+    <h2>We won!</h2>
+<% elsif @player_pick == "paper" %>
+    <h2>They played paper! </h2>
+    <h2>We lost!</h2>
+  <%end%>
+
+<a href="https://glorious-disco-q79pxgggx6pp345pj-3000.app.github.dev\">Rules</a>
 </body>
 
 </html>
